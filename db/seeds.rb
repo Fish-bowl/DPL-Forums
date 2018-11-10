@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 admin = User.create!(
     display_name: 'Admin',
-    email: "admin@dpl_forums.com",
-    password: "123456",
+    email: "admin@admin.com",
+    password: "password",
     admin: true
 )
 
 messageboard = Thredded::Messageboard.create!(
     name: 'General',
     slug: 'general',
-    description: 'A board is not a board without some posts'
+    description: 'a place for general discussions'
 )
 
 Thredded::TopicForm.new(
