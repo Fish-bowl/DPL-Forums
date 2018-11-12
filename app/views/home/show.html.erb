@@ -1,19 +1,44 @@
-<h1>Welcome to the Dev Point Labs Forums!</h1>
 
-<p>Check out the
-  <b><%= link_to t('nav.forums'), thredded.root_path %></b>.
-</p>
-
-<ul>
-    <h1>RULES:</h1>
-    <li>
-       1. don't be a dick
-    </li>
-    <li>
-       2. refer to rule #1
-    </li>
-  </ul>
-
-<% unless Rails.env.production? %>
+<style>
+  div {margin-top: 20px;}
   
-<% end %>
+</style>
+<div>
+  <%= image_tag ("/devpointbanner.png") %>
+</div>
+
+<h1>
+  Welcome to the Dev Point Labs 
+  <%= link_to t('nav.forums'), thredded.root_path %>
+  !
+</h1>
+<hr>
+<ul>
+    <h2>About:</h2>
+    <li>
+      This is a forum page created for asking and answering questions regarding code and the community of dev point labs.
+    </li>
+    <li>
+      Meant to replace mentor_questions in slack so that the answers remain for future students who have the same questions.
+    </li>
+
+    <li>
+      Got an idea for a feature? Drop an Admin a DM and make a pull request!!! 
+    </li>
+</ul>
+<hr>
+<ol>
+    <h2>RULES:</h2>
+    <li>
+      Don't be rude, this is a learning and teaching space. 
+    </li>
+    <li>
+      We all started somewhere. Build up, don't break down.
+    </li>
+    <li>
+      Refer to rule #1.
+    </li>
+    <li>
+      Keep discussions PG-13 please, or use something else.
+    </li>
+  </ol>
