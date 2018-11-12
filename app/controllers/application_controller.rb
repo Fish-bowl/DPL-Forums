@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   before_action :store_current_location, unless: :devise_controller?
   helper_method :back_url
 
+
   private
 
   def store_current_location
