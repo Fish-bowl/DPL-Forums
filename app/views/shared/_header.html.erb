@@ -9,7 +9,7 @@
         <%= link_to t('nav.sign_in'), main_app.new_user_session_path %>
     <% end %>
   </span>
-  <a class="app-nav-logo" href="/"><%= t 'brand.name' %></a>
+  <a class="app-nav-logo" href="/"><%= t 'Home' %></a>
   <div class="app-nav-theme">
     <span class="app-nav-text"><%= t 'nav.theme' %>:</span>
     <ul>
@@ -26,5 +26,7 @@
         <% end -%>
       <% end %>
     </ul>
+    <span>
   </div>
+  <div class='app-nav-link' ><%= link_to t('nav.forums'), thredded.root_path %></div>
 </header>

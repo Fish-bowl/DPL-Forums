@@ -8,6 +8,14 @@
   }
 }
 
+.app-nav-link {
+  display: inline;
+  margin-left: 20%;
+  font-size: 1.25em;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .app-nav-logo {
   color: $text-color;
   text-decoration: none;
