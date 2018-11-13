@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require 'html_pipeline_twemoji'
 # Thredded configuration
 
 # ==> User Configuration
@@ -112,7 +112,8 @@ Thredded.parent_mailer = 'ApplicationMailer'
 # ===> Emoji using the 'gemoji' gem
 # 1. Install `gemoji` following instruction at https://github.com/github/gemoji.
 # 2. Uncomment the following line:
-Thredded::ContentFormatter.after_markup_filters.insert(1, HTML::Pipeline::EmojiFilter)
+Thredded::ContentFormatter.after_markup_filters.insert(1, HTMLPipelineTwemoji)
+
 
 # Change the HTML sanitization settings used by Thredded.
 # See the Sanitize docs for more information on the underlying library: https://github.com/rgrove/sanitize/#readme
