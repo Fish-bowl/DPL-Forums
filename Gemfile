@@ -13,6 +13,7 @@ gem 'thredded-markdown_coderay'
 gem 'jbuilder', '~> 2.5'
 gem 'thredded-bbcode'
 gem 'twemoji'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'dropzonejs-rails'
 gem "aws-sdk-s3", require: false
 gem 'bootsnap', '>= 1.1.0', require: false
